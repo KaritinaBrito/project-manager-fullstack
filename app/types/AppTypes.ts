@@ -1,4 +1,4 @@
-import React, { Dispatch } from "react";
+import React from "react";
 import { Project, Task } from "../Data/AllProjects";
 
 export type SideBarMenuItem = {

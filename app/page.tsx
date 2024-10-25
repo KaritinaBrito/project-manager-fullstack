@@ -1,6 +1,6 @@
 "use client"
 import { useAuth } from '@clerk/nextjs';
-import { Description, DevicesRounded, ListAltRounded, SortRounded } from '@mui/icons-material';
+import { DevicesRounded, ListAltRounded, SortRounded } from '@mui/icons-material';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import Image from 'next/image';
 import Link from 'next/link';

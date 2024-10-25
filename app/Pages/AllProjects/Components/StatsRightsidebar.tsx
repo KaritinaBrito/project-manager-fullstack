@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import SplitscreenIcon from '@mui/icons-material/Splitscreen';
 import { useContextApp } from 'app/app/contextApp';
 import { Project } from 'app/app/Data/AllProjects';

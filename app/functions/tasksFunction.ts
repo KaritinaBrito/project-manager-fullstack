@@ -1,6 +1,6 @@
 import React from "react";
 import { Project, Task } from "../Data/AllProjects";
-import { Priority } from "../components/Windows/TasksWindow";
+//import { Priority } from "../components/Windows/TasksWindow";
 
 interface DeleteTaskProps {
     taskToDelete: Task;
@@ -43,18 +43,18 @@ export default function addNewTask(
     setAllProjects(updateAllProjects);
 }
 
-interface UpdateTaskAndProjectsProps {
-    selectedTask: Task;
-    data: FormData;
-    selectedIcon: { name: string } | null;
-    project: Project | null;
-    priority: Priority | null;
-    allProjects: Project[];
-    chosenProject: Project | null;
-    setAllTasks: React.Dispatch<React.SetStateAction<Task[]>>;
-    setChosenProject: React.Dispatch<React.SetStateAction<Project>>;
-    setAllProjects: React.Dispatch<React.SetStateAction<Project[]>>;
-}
+// interface UpdateTaskAndProjectsProps {
+//     selectedTask: Task;
+//     data: FormData;
+//     selectedIcon: { name: string } | null;
+//     project: Project | null;
+//     priority: Priority | null;
+//     allProjects: Project[];
+//     chosenProject: Project | null;
+//     setAllTasks: React.Dispatch<React.SetStateAction<Task[]>>;
+//     setChosenProject: React.Dispatch<React.SetStateAction<Project>>;
+//     setAllProjects: React.Dispatch<React.SetStateAction<Project[]>>;
+// }
 
 
 

@@ -528,7 +528,7 @@ export const allIconsArray: IconData[] = [
 export default function AllIcons(){
     const {
         allIconsDataObject: {allIconsData, setAllIconsData},
-        selectedIconObject: {selectedIcon, setSelectedIcon},
+        selectedIconObject: {setSelectedIcon},
         openIconWindowObject: {setOpenIconWindow}
     } = useContextApp();
 

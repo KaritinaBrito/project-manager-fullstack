@@ -7,9 +7,9 @@ import { getIconComponent } from 'app/app/functions/IconsActions';
 
 function ProjectsDropDown(){
     const {
-        allProjectsObject: {allProjects, setAllProjects},
+        allProjectsObject: {allProjects},
         openProjectsDropDownObject: {openProjectsDropDown, setOpenProjectsDropDown},
-        projectsDropDownPositionObject: {projectsDropDownPositions, setProjectsDropDownPositions},
+        projectsDropDownPositionObject: {projectsDropDownPositions},
     } = useContextApp();
 
     const dropDownRef = useRef<HTMLDivElement>(null)
@@ -52,7 +52,7 @@ function ProjectsDropDown(){
             <AllProjectsItem/>
             <hr className="w-[80%] text-slate-400 mx-auto my-1 opacity-55"></hr>
             <>
-                {allProjects.map((singleProject, index) => (
+                {allProjects.map((singleProject) => (
                     <SingleProject key={singleProject.id} singleProject={singleProject}/>
                 ))}
             </>
@@ -64,7 +64,7 @@ export default ProjectsDropDown;
 
 function AllProjectsItem (){
     const {
-        chosenProjectobject: {chosenProject, setChosenProject},
+        chosenProjectobject: {setChosenProject},
         openProjectsDropDownObject: {setOpenProjectsDropDown}
     } = useContextApp();
     return (

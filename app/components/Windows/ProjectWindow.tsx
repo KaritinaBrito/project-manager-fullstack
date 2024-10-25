@@ -4,7 +4,7 @@ import {useContextApp} from "../../contextApp";
 import BorderAllIcon from '@mui/icons-material/BorderAll';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-import { useForm, SubmitHandler, UseFormRegister, FieldErrors, UseFormReset } from 'react-hook-form';
+import { useForm, SubmitHandler, UseFormRegister, FieldErrors } from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import {addNewProject, editProject} from '../../functions/projectsAction';
@@ -150,8 +150,7 @@ function ProjectWindow(){
     );
     function Header ({handleClose} : {handleClose: () => void}){
         const {
-            selectedIconObject: {selectedIcon},
-            selectedProjectObject: {selectedProject, setSelectedProject},
+            selectedProjectObject: {selectedProject},
         } = useContextApp();
 
         const {
@@ -191,8 +190,8 @@ function ProjectWindow(){
         errors} :{register: UseFormRegister<FormData>; errors: FieldErrors<FormData>;
         }) {
             const {
-                openIconWindowObject: {openIconWindow, setOpenIconWindow},
-                selectedIconObject: {selectedIcon, setSelectedIcon},
+                openIconWindowObject: {setOpenIconWindow},
+                selectedIconObject: {selectedIcon},
             } = useContextApp();
     
         return(
@@ -232,7 +231,7 @@ function ProjectWindow(){
     function Footer ({handleClose}:{handleClose: () => void}){
         const {
             selectedIconObject: {setSelectedIcon},
-            selectedProjectObject: {selectedProject, setSelectedProject},
+            selectedProjectObject: {selectedProject},
         } = useContextApp();
 
         return (

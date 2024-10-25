@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useRef } from "react";
 import PriorityListComponent from "../DropDowns/TasksDropDown/PriorityListComponent";
 import ProjectsListComponent from "../DropDowns/TasksDropDown/ProjectsListComponent";
@@ -36,7 +36,7 @@ export default function TasksDropDown(){
 
     }, [openTasksDropDown, setOpenTasksDropDown]);
 
-    let udpateBottomPos = 0;
+    //let udpateBottomPos = 0;
     let updatedRightPos = 0;
     let updatedLeftPos = 0;
 

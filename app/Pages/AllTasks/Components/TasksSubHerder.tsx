@@ -15,7 +15,7 @@ function TasksSubHeader (){
 
     function MyProjectsText (){
         const {
-            chosenProjectobject: {chosenProject, setChosenProject},
+            chosenProjectobject: {chosenProject},
             allProjectsObject: {allProjects},
             openProjectsDropDownObject: {openProjectsDropDown, setOpenProjectsDropDown},
             projectsDropDownPositionObject: {setProjectsDropDownPositions}

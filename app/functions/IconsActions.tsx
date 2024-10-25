@@ -33,7 +33,6 @@ import {
     Crop, 
     Dashboard, 
     Delete, 
-    DensitySmall, 
     Done, 
     Edit, 
     Email, 

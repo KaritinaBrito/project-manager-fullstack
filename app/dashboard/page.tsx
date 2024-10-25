@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 import AllProjects from "../Pages/AllProjects/AllProjects";
 import AllTasksContainer from '../Pages/AllTasks/AllTasks';
 import { useContextApp } from "../contextApp";
-import React, { useEffect } from "react";
+import React from "react";
 import {Toaster} from "react-hot-toast";
 import ProjectWindow from "../components/Windows/ProjectWindow";
 import IconsWindow from "../components/Windows/IconWindow";
@@ -19,7 +19,6 @@ export default function Home() {
     openSideBarObject: { openSideBar },
     sideBarMenuObject: {sideBarMenu},
     openProjectWindowObject: {openProjectWindow},
-    openIconWindowObject: {openIconWindow},
     openConfirmationWindowObject: {openConfirmationWindow}
   } = useContextApp();
   const {openTasksDropDown} = useTaskFormContext();

@@ -8,12 +8,12 @@ import { useContextApp } from "app/app/contextApp";
 function MoreDropDown (){
     const { 
         openDropDownObject: {openDropDown, setOpenDropDown},
-        dropDownPositionsObject: {dropDownPositions, setDropDownPositions},
-        openConfirmationWindowObject: {openConfirmationWindow, setOpenConfirmationWindow},
-        openProjectWindowObject: {openProjectWindow, setOpenProjectWindow},
+        dropDownPositionsObject: {dropDownPositions},
+        openConfirmationWindowObject: {setOpenConfirmationWindow},
+        openProjectWindowObject: {setOpenProjectWindow},
     }  = useContextApp();
 
-    const [dropDownOptions, setDropDownOptions] = useState([
+    const [dropDownOptions] = useState([
         {id: 1, name: "Edit", icon: <EditOutlinedIcon />},
         {id: 2, name: "Delete", icon: <DeleteIcon />},
     ]);

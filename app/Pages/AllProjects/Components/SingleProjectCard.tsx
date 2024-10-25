@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import SplitscreenIcon from '@mui/icons-material/Splitscreen';
 import MoreVerticalIcon from '@mui/icons-material/MoreVert';
 import CircleIcon from '@mui/icons-material/Circle';
 import { Project } from 'app/app/Data/AllProjects';
@@ -103,7 +102,7 @@ function SingleProjectCard ({project} : {project: Project}){
         const {
             openTasksWindowObject: {setOpenTasksWindow},
             projectClickedObject: {setProjectClicked},
-            allProjectsObject: {allProjects, setAllProjects},
+            allProjectsObject: {allProjects},
         } = useContextApp();
 
         function openTheTaskWindow(){

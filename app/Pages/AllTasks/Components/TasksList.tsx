@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import Checkbox from '@mui/material/Checkbox';
-import ListIcon from '@mui/icons-material/List';
 import CachedIcon from '@mui/icons-material/Cached';
 import CircleIcon from '@mui/icons-material/Circle';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
@@ -8,15 +7,14 @@ import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import { useContextApp } from 'app/app/contextApp';
 import { Project, Task } from 'app/app/Data/AllProjects';
 import { getIconComponent } from 'app/app/functions/IconsActions';
-import { useTaskFormContext } from 'app/app/components/Windows/TasksWindow';
 import { TasksEmptyScreen } from 'app/app/EmptyScreens/TasksEmptySreen';
 
-const TasksList = ({task}: {task:Task}) => {
+const TasksList = () => {
     const {
         chosenProjectobject: {chosenProject},
         allProjectsObject: {allProjects},
         tabsOptionsObject: {tabsOptions},
-        allTasksObject: {allTasks, setAllTasks},
+        allTasksObject: {allTasks},
     } = useContextApp();
 
     //Filter tasks based on chosen project status

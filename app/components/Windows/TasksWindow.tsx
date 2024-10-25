@@ -13,9 +13,8 @@ import * as z from 'zod';
 import { FieldErrors, SubmitHandler, useForm, UseFormRegister } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { v4 as uuidv4 } from "uuid";
-import { calculateSizeAdjustValues } from "next/dist/server/font-utils";
 import { allIconsArray } from "app/app/Data/AllIcons";
-import addNewTask, { updateTaskAndProjects } from "app/app/functions/tasksFunction";
+import addNewTask from "app/app/functions/tasksFunction";
 import toast from "react-hot-toast";
 
 
@@ -542,10 +541,8 @@ function PrioritySelection(){
     const {
         setClickedSelection,
         setOpenTasksDropDown,
-        openTasksDropDown,
         setTasksDropDownPositions,
         priority,
-        clickedSelection,
         selectionErrorsObject: {selectionErrors, setSelectionErrors}
     } = useTaskFormContext();
 

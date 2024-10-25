@@ -20,7 +20,7 @@ function ProjectsSubHeader (){
     function SortByButton (){
         const {
             openSortingDropDownObject: { openSortingDropDown, setOpenSortingDropDown},
-            sortingDropDownPositionsObject: {sortingDropDownPositions, setSortingDropDownPositions},
+            sortingDropDownPositionsObject: { setSortingDropDownPositions },
             sortingOptionsProjectObject: {sortingOptionsProject}
         } = useContextApp();
 

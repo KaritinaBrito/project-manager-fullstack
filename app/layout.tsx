@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import {Inter, Poppins} from "next/font/google";
+import {Poppins} from "next/font/google";
 import "./globals.css";
 import ContextAppProvider from "./contextApp";
 import { ClerkProvider } from "@clerk/nextjs";
 
-const inter = Inter({subsets: ['latin']});
 
 const poppins = Poppins({
   subsets: ['latin'],

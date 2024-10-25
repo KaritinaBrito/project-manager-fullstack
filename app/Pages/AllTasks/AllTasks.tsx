@@ -9,7 +9,7 @@ function AllTasksContainer(){
         <div className='bg-slate-50 w-full p-10 max-sm:py-9 max-sm:p-8'>
             <TasksHeader />
             <TasksSubHeader />
-            <TasksList/>
+            <TasksList />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 'use client'; 
-import React, { useEffect } from 'react';
+import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import AddIcon from '@mui/icons-material/Add';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -7,8 +7,6 @@ import { useContextApp } from 'app/app/contextApp';
 import { useTaskFormContext } from 'app/app/components/Windows/TasksWindow';
 
 function TasksHeader (){
-    const { openTasksDropDown, setOpenTasksDropDown} =  useTaskFormContext();
-
     return (
         <div className='flex justify-between'>
             <SearchBar/>
@@ -33,7 +31,7 @@ function TasksHeader (){
     function AddProjectButton(){
         const {
             openSideBarObject: {openSideBar, setOpenSideBar},
-            openTasksWindowObject: {openTasksWindow, setOpenTasksWindow},
+            openTasksWindowObject: {setOpenTasksWindow},
         } = useContextApp();
 
 
